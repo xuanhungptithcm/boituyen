@@ -23,7 +23,28 @@
     width: 13rem;
   }
 }
-
+@media only screen and (max-width: 755px) {
+  .back {
+    width: 45px;
+    height: 45px;
+  }
+  .footer-area .main-container .copy-right {
+    width: 100%;
+    flex: none !important;
+  }
+  .footer-area .main-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .main-container .right-footer {
+    flex-wrap: wrap;
+    flex: none !important;
+    width: 100%;
+  }
+  .footer-area .main-container .right-footer .contact {
+    width: 100%;
+  }
+}
 /* if the viewport is equal to 340px or less than that */
 @media only screen and (max-width: 792px) {
   .site-main .about-area .about-title h2 > span {
@@ -59,6 +80,45 @@
   }
   :root {
     --p-d-30: 15px;
+  }
+  .products {
+    padding: 25px 20px;
+  }
+  .banner-product-project {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-area .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer-area .main-container .copy-right {
+    flex: 2;
+  }
+  .footer-area .main-container .right-footer {
+    flex: 3;
+  }
+  .footer-area .main-container .contact {
+    width: 50%;
+  }
+  .site-main .site-banner .banner-image {
+    height: calc(80vh - 88px);
+  }
+  .site-main .site-banner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+  }
+  .site-main .site-banner .site-title h1 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+  .site-buttons {
+    margin-top: 2rem;
   }
 }
 

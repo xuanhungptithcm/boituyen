@@ -45,7 +45,22 @@ $(document).ready(function() {
       });
     }
   }
-
+  $('.banner-product .owl-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      560: {
+        items: 3,
+      },
+      990: {
+        items: 5,
+      },
+    },
+  });
   navbarFixed();
   reportWindowSize();
 });

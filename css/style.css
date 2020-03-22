@@ -5,7 +5,6 @@
 @import url(./partials/_global.css);
 /* start navigation */
 .main-menu {
-  background-image: url('../images/Artboard20.png');
   background-color: var(--main-color);
   /* height: 100vh; */
   background-attachment: fixed;
@@ -260,7 +259,7 @@
 }
 .footer-area {
   background-color: #282828;
-  height: 200px;
+  height: auto;
   margin-top: 65px;
   color: #ffffff;
   display: flex;
@@ -278,6 +277,9 @@
 .footer-area .social .icons {
   margin-bottom: 0.5rem;
 }
+.footer-container {
+  padding: 50px 0 10px;
+}
 .main-container {
   max-width: 90%;
   margin: 0 auto;
@@ -291,8 +293,8 @@
 }
 .back {
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   top: 0;
   left: 50%;
   transform: translate(0, -50%);
@@ -302,7 +304,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px;
+  padding: 40px 30px;
 }
 .banner-product {
   max-width: 90%;
@@ -318,8 +320,19 @@
   overflow: hidden;
   margin-bottom: var(--p-d-30);
 }
-.social {
+.social,
+.copy-right,
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.main-banner-product .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.owl-carousel .owl-item img {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 90px;
 }
