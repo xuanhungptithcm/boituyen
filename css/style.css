@@ -95,7 +95,7 @@
   color: transparent;
 }
 .row.grid .element-item {
-  padding-bottom: 30px;
+  padding-bottom: var( --p-d-30);
 }
 .grid {
   display: grid;
@@ -121,7 +121,7 @@
   height: fit-content;
 }
 .column2 .element-item {
-  padding-left: 30px;
+  padding-left: var( --p-d-30);
 }
 .column21 {
   width: 100%;
@@ -160,7 +160,7 @@
 }
 
 .bottom .column3 .element-item:first-child {
-  padding-right: 30px;
+  padding-right: var( --p-d-30);
 }
 .products {
   display: flex;
@@ -193,10 +193,10 @@
   align-items: flex-end;
 }
 .footer-area .social h4 {
-  padding-bottom: 30px;
+  padding-bottom: var( --p-d-30);
 }
 .footer-area .social .icons img:not(:last-child) {
-  padding-right: 30px;
+  padding-right: var( --p-d-30);
   margin-bottom: 0.5rem;
 }
 .main-container {
@@ -240,26 +240,26 @@
   display: flex;
 }
 .column1 .element-item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: var(--p-d-30);
 }
 .column21 .element-item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: var(--p-d-30);
 }
 .column21 .element-item:first-child {
-  margin-right: 30px;
+  margin-right: var(--p-d-30);
 }
 
 .column2 {
-  margin-left: 30px;
+  margin-left: var(--p-d-30);
 }
 .bottom .column3 {
   display: flex;
 }
 .bottom .column3 .element-item.element-item:not(:last-child) {
-  padding-right: 30px;
+  padding-right: var(--p-d-30);
 }
 .footer-area {
-  background-color: #d6d6d6;
+  background-color: #282828;
   height: 200px;
   margin-top: 65px;
   color: #ffffff;
@@ -273,10 +273,9 @@
   align-items: flex-end;
 }
 .footer-area .social h4 {
-  padding-bottom: 30px;
+  padding-bottom: var(--p-d-30);
 }
-.footer-area .social .icons img:not(:last-child) {
-  padding-right: 30px;
+.footer-area .social .icons {
   margin-bottom: 0.5rem;
 }
 .main-container {
@@ -314,4 +313,13 @@
 .banner-product-project {
   max-width: 60%;
   margin: 0 auto;
+}
+.flex.grid {
+  overflow: hidden;
+  margin-bottom: var(--p-d-30);
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

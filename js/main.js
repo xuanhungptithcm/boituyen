@@ -47,4 +47,22 @@ $(document).ready(function() {
   }
 
   navbarFixed();
+  reportWindowSize();
 });
+function reportWindowSize() {
+  const column1 = document.getElementsByClassName('column1');
+  const element = column1[0].getElementsByClassName('element-item');
+  const mainProduct = document.getElementsByClassName('flex grid');
+
+  if (window.innerWidth < 792) {
+    const height = element[0].offsetHeight + element[1].offsetHeight + element[2].offsetHeight + 30;
+    console.log(height);
+
+    mainProduct[0].style.height = height + 'px';
+  } else {
+    const height = element[0].offsetHeight + element[1].offsetHeight + element[2].offsetHeight + 60;
+    mainProduct[0].style.height = height + 'px';
+  }
+}
+
+window.onresize = reportWindowSize;

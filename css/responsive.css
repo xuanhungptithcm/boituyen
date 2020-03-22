@@ -57,6 +57,9 @@
     width: 20rem;
     margin: 5%;
   }
+  :root {
+    --p-d-30: 15px;
+  }
 }
 
 /* if the viewport is equal to 1910px or less than that */
