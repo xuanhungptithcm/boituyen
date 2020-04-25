@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //   $('.project-area .grid').isotope({
   //     filter: '*',
   //   });
@@ -11,8 +11,8 @@ $(document).ready(function() {
   // Owl-carousel
 
   $('.site-main .about-area .owl-carousel').owlCarousel({
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     dots: true,
     responsive: {
       0: {
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
   function navbarFixed() {
     if ($('.header_area').length) {
-      $(window).scroll(function() {
+      $(window).scroll(function () {
         let scroll = $(window).scrollTop();
         if (scroll >= nav_offset_top) {
           $('.header_area .main-menu').addClass('navbar_fixed');
@@ -70,14 +70,32 @@ function reportWindowSize() {
   const mainProduct = document.getElementsByClassName('flex grid');
 
   if (window.innerWidth < 792) {
-    const height = element[0].offsetHeight + element[1].offsetHeight + element[2].offsetHeight + 30;
+    const height =
+      element[0].offsetHeight +
+      element[1].offsetHeight +
+      element[2].offsetHeight +
+      30;
     console.log(height);
 
     mainProduct[0].style.height = height + 'px';
   } else {
-    const height = element[0].offsetHeight + element[1].offsetHeight + element[2].offsetHeight + 60;
+    const height =
+      element[0].offsetHeight +
+      element[1].offsetHeight +
+      element[2].offsetHeight +
+      60;
     mainProduct[0].style.height = height + 'px';
   }
+  const banner = document.getElementsByClassName('site-banner');
+  if (window.innerWidth < 600) {
+    banner[0].style.backgroundPosition =
+      '0% ' + -(window.innerWidth - 600) * 0.6 + 'px';
+  }
+  // xu ly back ground
 }
 
 window.onresize = reportWindowSize;
+
+function filterProduct(e) {
+  console.log(e);
+}

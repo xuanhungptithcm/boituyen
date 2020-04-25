@@ -23,6 +23,26 @@
     width: 13rem;
   }
 }
+@media only screen and (max-width: 575px) {
+  .site-main .site-banner {
+    background-image: none;
+  }
+  .site-main .site-banner .banner-image {
+    display: none;
+  }
+  .site-title {
+    margin: 30px 0;
+  }
+  .site-main .site-banner .site-title h1 {
+    font-size: 2rem;
+  }
+  .site-title .site-buttons {
+    margin-top: 0.5rem;
+  }
+  .site-main .site-banner .site-title h4 {
+    line-height: 1;
+  }
+}
 @media only screen and (max-width: 755px) {
   .back {
     width: 45px;
@@ -43,6 +63,9 @@
   }
   .footer-area .main-container .right-footer .contact {
     width: 100%;
+  }
+  .site-main .site-banner .banner-image {
+    height: 400px;
   }
 }
 /* if the viewport is equal to 340px or less than that */
@@ -104,15 +127,7 @@
   .footer-area .main-container .contact {
     width: 50%;
   }
-  .site-main .site-banner .banner-image {
-    height: calc(80vh - 88px);
-  }
-  .site-main .site-banner {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-size: contain;
-  }
+
   .site-main .site-banner .site-title h1 {
     line-height: 2.5rem;
     font-size: 2rem;
@@ -121,7 +136,14 @@
     margin-top: 2rem;
   }
 }
-
+@media only screen and (max-width: 1032px) {
+  .site-main .site-banner {
+    background-position: 0% 0;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+  }
+}
 /* if the viewport is equal to 1910px or less than that */
 @media only screen and (max-width: 1910px) {
   .header_area .main-menu .navbar {
@@ -136,5 +158,17 @@
   .site-main .services-area .services-title,
   .site-main .about-area {
     padding: 3% 4%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .site-main .site-banner .banner-image {
+    height: 600px;
+  }
+}
+
+@media only screen and (min-width: 756px) and (max-width: 991px) {
+  .site-main .site-banner .banner-image {
+    height: 500px;
   }
 }
